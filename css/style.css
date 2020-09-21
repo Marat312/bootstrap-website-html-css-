@@ -1,0 +1,39 @@
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: black;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background-color: red;
+    transition: .5s;
+}
+
+.navbar-light .navbar-nav .active .nav-link::after{
+    width: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 80%;
+}
+
+p{
+   font-size: 14px;
+}
+
+.rounded-circle{
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+   
+}
+
+footer{
+    background-image:url(../img/footer.jpg)
+
+}
